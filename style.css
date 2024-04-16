@@ -1,0 +1,214 @@
+body {
+    background-color: hsl(226, 43%, 10%);
+}
+
+p {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 300;
+}
+
+.external-grid {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    grid-gap: 20px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+
+.profile-content {
+    background-color: hsl(235, 46%, 20%);
+    height: 430px;
+    border-radius: 10px;
+}
+
+.profile-name {
+    background-color: hsl(246, 80%, 60%);
+    height: 285px;
+    border-radius: 10px;
+}
+
+.profile-name img{
+    width: 60px;
+    border: 2px solid white;
+    border-radius: 31px;
+    margin-top: 25px; 
+    margin-left: 20px;
+}
+
+.internal-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    overflow: hidden;
+    grid-auto-flow: row dense;
+}
+
+.content-work {
+    background-color: hsl(15, 100%, 70%);
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.content-work-img {
+    height: 55px;
+    margin-left: 130px;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 2;
+}
+
+.content-play {
+    background-color: hsl(195, 74%, 62%);
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.content-play-img {
+    height: 55px;
+    margin-left: 130px;
+    margin-top: -3px;
+    position: absolute;
+    z-index: 2;
+}
+
+.content-study {
+    background-color: hsl(348, 100%, 68%);
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.content-study-img {
+    height: 55px;
+    margin-left: 130px;
+    margin-top: -4px;
+    position: absolute;
+    z-index: 2;
+}
+
+.content-exercise {
+    background-color: hsl(145, 58%, 55%);
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.content-exercise-img {
+    height: 40px;
+    margin-left: 130px;
+    margin-top: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+.content-social {
+    background-color: hsl(264, 64%, 52%);
+    height: 200px;
+    border-radius: 10px;
+}
+
+.content-social-img {
+    height: 77px;
+    margin-left: 130px;
+    margin-top: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+.content-self-care {
+    background-color: hsl(43, 84%, 65%);
+    height: 205px;
+    border-radius: 10px;
+}
+
+.content-self-care-img {
+    height: 55px;
+    margin-left: 130px;
+    margin-top: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+
+.content-box {
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 35px;
+    height: 170px;
+    width: 200px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    position: relative;
+    z-index: 3;
+}
+
+.report-p {
+    color: rgba(211, 211, 211, 0.7);
+    font-size: 11px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.name-p {
+    color: white;
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 25px;
+}
+
+.daily-p {
+    color: hsla(236, 100%, 87%, 0.5);
+    margin-left: 25px;
+    margin-top: 24px;
+}
+
+.weekly-p {
+    color: hsl(236, 100%, 100%);
+    margin-left: 25px;
+    margin-top: 17px;
+}
+
+.monthly-p {
+    color: hsla(236, 100%, 87%, 0.5);
+    margin-left: 25px;
+    margin-top: 17px;
+}
+
+.content-name-p {
+    color: white;
+    margin: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.content-hours-p {
+    color: white;
+    font-weight: 300;
+    margin-left: 25px;
+    font-size: 45px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.content-previous-p {
+    color: rgba(211, 211, 211, 0.7);
+    font-weight: 300;
+    margin-left: 25px;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.ellipsis-img {
+    height: 4px;
+    margin-top: 16px;
+}
