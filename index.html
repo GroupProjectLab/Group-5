@@ -1,76 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Group 4 Project - Time tracking dashboard</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  Report for
-  Jeremy Robson
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="Styles.css" />
+    <title>Group 5 - Time Tracking Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+  </head>
 
-  Daily
-  Weekly
-  Monthly
+  <body>
+    <script src="script.js"></script>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+    <div class="c1">
+      <div class="dash">
+        <div class="description">
+          <div class="details">
+            <img src="./images/image-jeremy.png" alt="jeremy" class="jeremy" />
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+            <!-- Jeremy's report -->
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+            <div class="data">
+              <span> Report for </span>
+              <h1>Jeremy Robson</h1>
+            </div>
+          </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+          <div class="menu1">
+            <a href="" class="frequency"> Daily </a>
+            <a href="" class="frequency main"> Weekly </a>
+            <a href="" class="frequency"> Monthly </a>
+          </div>
+        </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+        <!-- Work Section -->
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+        <div class="work">
+          <div class="image">
+            <img src="./images/icon-work.svg" alt="" />
+          </div>
 
+          <div class="content">
+            <div class="head">
+              <label class="title"> Work </label>
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
 
-  <!-- Project credits -->
+            <div class="time">
+              <h1 class="current">32hrs</h1>
+              <span class="last"> Last Week - 36hrs </span>
+            </div>
+          </div>
+        </div>
 
-  <footer>
-    <div class="attribution">
-      Challenge prepared by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name(s) Here</a>.
+        <!-- Play Section -->
+
+        <div class="play">
+          <div class="image">
+            <img src="./images/icon-play.svg" alt="play" />
+          </div>
+
+          <div class="content">
+            <div class="head">
+              <label class="title"> Play </label>
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+
+            <div class="time">
+              <h1 class="current">10hrs</h1>
+              <span class="last"> Last Week - 8hrs </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study Section -->
+
+        <div class="study">
+          <div class="image">
+            <img src="./images/icon-study.svg" alt="study" />
+          </div>
+
+          <div class="content">
+            <div class="head">
+              <label class="title"> Study </label>
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+
+            <div class="time">
+              <h1 class="current">4hrs</h1>
+              <span class="last"> Last Week - 7hrs </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise Section -->
+
+        <div class="exercise">
+          <div class="image">
+            <img src="./images/icon-exercise.svg" alt="" />
+          </div>
+
+          <div class="content">
+            <div class="head">
+              <label class="title"> Exercise </label>
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+
+            <div class="time">
+              <h1 class="current">4hrs</h1>
+              <span class="last"> Last Week - 5hrs </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Section -->
+
+        <div class="social">
+          <div class="image">
+            <img src="./images/icon-social.svg" alt="" />
+          </div>
+
+          <div class="content">
+            <div class="head">
+              <label class="title"> Social </label>
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+
+            <div class="time">
+              <h1 class="current">5hrs</h1>
+              <span class="last"> Last Week - 10hrs </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selfcare Section -->
+
+        <div class="self-care">
+          <div class="image">
+            <img src="./images/icon-self-care.svg" alt="self" />
+          </div>
+
+          <div class="content">
+            <div class="head">
+              <label class="title"> Self Care </label>
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+
+            <div class="time">
+              <h1 class="current">2hrs</h1>
+              <span class="last"> Last Week - 2hrs </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge prepared by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="Jorge Berruecos">Group 5 CCTB IST 103</a>.
+      </div>
+    </footer>
+  </body>
 </html>
