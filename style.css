@@ -155,7 +155,7 @@ p {
     top: 35px;
     z-index: 3;
     cursor: pointer;
-    transition: opacity 0.5;
+    transition: background-color 0.5s;
 }
 
 .content-box:hover {
@@ -181,6 +181,11 @@ p {
     margin-left: 25px;
     margin-top: 24px;
     cursor: pointer;
+    transition: color 0.5s;
+}
+
+.daily-p:hover {
+    color: white;
 }
 
 .weekly-p {
@@ -188,6 +193,11 @@ p {
     margin-left: 25px;
     margin-top: 17px;
     cursor: pointer;
+    transition: color 0.5s;
+}
+
+.weekly-p:hover {
+    color: white
 }
 
 .monthly-p {
@@ -195,6 +205,11 @@ p {
     margin-left: 25px;
     margin-top: 17px;
     cursor: pointer;
+    transition: color 0.5s;
+}
+
+.monthly-p:hover {
+    color: white
 }
 
 .content-name-p {
