@@ -28,7 +28,11 @@ span {
   font-weight: 300;
   margin-left: 5px;
 }
-
+p {
+  font-size: xx-large;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 span {
   margin-top: 20px;
   color: #bbbff8;
