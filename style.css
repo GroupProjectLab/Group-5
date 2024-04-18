@@ -2,7 +2,7 @@ body {
     background-color: hsl(226, 43%, 10%);
 }
 
-p {
+p, li {
     font-family: "Rubik";
     font-style: normal;
     font-weight: 300;
@@ -176,10 +176,16 @@ p {
     margin-left: 25px;
 }
 
+.time-lst {
+    list-style-type: none;
+}
+
+.time-lst li {
+    margin-bottom: 15px;
+}
+
 #daily-p {
     color: hsla(236, 100%, 87%, 0.5);
-    margin-left: 25px;
-    margin-top: 24px;
     cursor: pointer;
     transition: color 0.5s;
 }
@@ -190,8 +196,6 @@ p {
 
 #weekly-p {
     color: hsl(236, 100%, 100%);
-    margin-left: 25px;
-    margin-top: 17px;
     cursor: pointer;
     transition: color 0.5s;
 }
@@ -202,8 +206,6 @@ p {
 
 #monthly-p {
     color: hsla(236, 100%, 87%, 0.5);
-    margin-left: 25px;
-    margin-top: 17px;
     cursor: pointer;
     transition: color 0.5s;
 }
@@ -225,8 +227,8 @@ p {
     font-weight: 300;
     margin-left: 25px;
     font-size: 45px;
-    margin-top: 25px;
     margin-bottom: 0;
+    display: inline;
 }
 
 .content-previous-p {
@@ -250,4 +252,179 @@ p {
     height: 6px;
     opacity: 1;
     background-color: hsl(235, 46%, 20%);
+}
+
+@media screen and (max-width: 650px) { 
+    .external-grid {
+        display: block;
+    }
+
+    .profile-content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .internal-grid {
+        display: block;
+    }
+
+    .content-work {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .content-study {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .content-play {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .content-exercise {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .content-self-care {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .content-social {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .time-lst {
+        margin-top: 30px;
+        column-count: 3;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .time-lst li {
+        margin-bottom: 23px;
+        width: 30px;
+        font-size: 17px;
+    }
+
+    .profile-name img {
+        margin-top: 40px;
+        width: 73px;
+        border-radius: 41px;
+    }
+
+    .report-p {
+        margin-top: 54px;
+        margin-bottom: 0;
+        font-size: 13px;
+    }
+    
+    .name-p {
+        margin-top: 10px;
+        font-size: 23px;
+    }
+
+    .profile-name p {
+        width: auto;
+    }
+
+    .profile-name {
+        padding-bottom: 27px;
+    }
+
+    .profile-data {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+    }
+    
+    .content-work {
+        height: 185px;
+    }
+
+    .content-play {
+        height: 185px;
+    }
+
+    .content-study {
+        height: 185px;
+    }
+
+    .content-exercise {
+        height: 185px;
+    }
+
+    .content-social {
+        height: 185px;
+    }
+
+    .content-self-care {
+        height: 185px;
+    }
+
+    .content-box {
+        height: 150px;
+    }
+
+    .content-box div:nth-child(3) {
+        grid-column: auto / span 2;
+    }
+
+    .content-name-p {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .content-hours-p {
+        vertical-align: middle;
+        display: inline;
+        font-size: 40px;
+    }
+
+    .content-previous-p {
+        margin-right: 30px;
+        font-size: 14px;
+        float: right;
+        display: inline;
+    }
+
+    .ellipsis-img {
+        width: 25px;
+        height: 6px;
+        margin-top: 40px;
+        margin-right: 30px;
+    }
+
+    .work-img {
+        bottom: 160px;
+    }
+
+    .play-img {
+        bottom: 158px;
+    }
+
+    .study-img {
+        bottom: 160px
+    }
+
+    .exercise-img {
+        bottom: 150px
+    }
+
+    .social-img {
+        bottom: 160px
+    }
+
+    .self-care-img {
+        bottom: 160px;
+    }
 }
