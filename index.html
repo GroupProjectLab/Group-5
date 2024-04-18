@@ -16,13 +16,21 @@
   <div class="external-grid">
     <div class="profile-content">
       <div class="profile-name">
-        <img src="images/image-jeremy.png">
-        <p class="report-p">Report for</p>
-        <p class="name-p">Jeremy Robson</p>
+        <div class="profile-data">
+          <div>
+            <img src="images/image-jeremy.png">
+          </div>
+          <div>
+            <p class="report-p">Report for</p>
+            <p class="name-p">Jeremy Robson</p>
+          </div>
+        </div>
       </div>
-      <p id="daily-p" onclick="showDailyValues(); return false;">Daily</p>
-      <p id="weekly-p" onclick="showWeeklyValues(); return false;" >Weekly</p>
-      <p id="monthly-p" onclick="showMonthlyValues(); return false";>Monthly</p>
+      <ul class="time-lst">
+        <li id="daily-p" onclick="showDailyValues(); return false;">Daily</li>
+        <li id="weekly-p" onclick="showWeeklyValues(); return false;" >Weekly</li>
+        <li id="monthly-p" onclick="showMonthlyValues(); return false";>Monthly</li>
+      </ul>
     </div>
 
       <div class="internal-grid">
@@ -30,11 +38,13 @@
           <div class="content-box">
             <div>
               <p class="content-name-p">Work</p>
-              <p class="content-hours-p" id="current-work"></p>
-              <p class="content-previous-p" id="last-work"></p> 
             </div>
             <div>
               <img class="ellipsis-img" src="images/icon-ellipsis.svg" alt="ellipsis">
+            </div>
+            <div>
+              <p class="content-hours-p" id="current-work"></p>
+              <p class="content-previous-p" id="last-work"></p> 
             </div>
           </div>
           <img class="work-img" src="images/icon-work.svg" alt="work">
@@ -44,11 +54,13 @@
           <div class="content-box">
             <div>
               <p class="content-name-p">Play</p>
-              <p class="content-hours-p" id="current-play"></p> 
-              <p class="content-previous-p" id="last-play"></p> 
             </div>
             <div>
               <img class="ellipsis-img" src="images/icon-ellipsis.svg" alt="ellipsis">
+            </div>
+            <div>
+              <p class="content-hours-p" id="current-play"></p> 
+              <p class="content-previous-p" id="last-play"></p> 
             </div>
           </div>
           <img class="play-img" src="images/icon-play.svg" alt="play">
@@ -58,11 +70,13 @@
           <div class="content-box">
             <div>
               <p class="content-name-p">Study</p>
-              <p class="content-hours-p" id="current-study"></p>
-              <p class="content-previous-p" id="last-study"></p>
             </div>
             <div>
               <img class="ellipsis-img" src="images/icon-ellipsis.svg" alt="ellipsis">
+            </div>
+            <div>
+              <p class="content-hours-p" id="current-study"></p>
+              <p class="content-previous-p" id="last-study"></p>
             </div>
           </div>
           <img class="study-img" src="images/icon-study.svg" alt="study">
@@ -72,11 +86,13 @@
           <div class="content-box">
             <div>
               <p class="content-name-p">Exercise</p>
-              <p class="content-hours-p" id="current-exercise"></p>
-              <p class="content-previous-p" id="last-exercise"></p>
             </div>
             <div>
               <img class="ellipsis-img" src="images/icon-ellipsis.svg" alt="ellipsis">
+            </div>
+            <div>
+              <p class="content-hours-p" id="current-exercise"></p>
+              <p class="content-previous-p" id="last-exercise"></p>
             </div>
           </div>
           <img class="exercise-img" src="images/icon-exercise.svg" alt="exercise">
@@ -86,11 +102,13 @@
           <div class="content-box">
             <div>
               <p class="content-name-p">Social</p>
-              <p class="content-hours-p" id="current-social"></p>
-              <p class="content-previous-p" id="last-social"></p>
             </div>
             <div>
               <img class="ellipsis-img" src="images/icon-ellipsis.svg" alt="ellipsis">
+            </div>
+            <div>
+              <p class="content-hours-p" id="current-social"></p>
+              <p class="content-previous-p" id="last-social"></p>
             </div>
           </div>
           <img class="social-img" src="images/icon-social.svg" alt="social">
@@ -100,11 +118,13 @@
           <div class="content-box">
             <div>
               <p class="content-name-p">Self Care</p>
-              <p class="content-hours-p" id="current-self-care"></p>
-              <p class="content-previous-p" id="last-self-care"></p>
             </div>
             <div>
               <img class="ellipsis-img" src="images/icon-ellipsis.svg" alt="ellipsis">
+            </div>
+            <div>
+              <p class="content-hours-p" id="current-self-care"></p>
+              <p class="content-previous-p" id="last-self-care"></p>
             </div>
           </div>
           <img class="self-care-img" src="images/icon-self-care.svg" alt="self-care">
