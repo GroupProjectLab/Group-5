@@ -66,17 +66,17 @@ function showDailyValues() {
     })
     .then(function(data1) {
         currentWork = `${data1[0].timeframes.daily.current}hrs` //concatenation with template literals;
-        lastWork = `Last Week - ${data1[0].timeframes.daily.previous}hrs`;
+        lastWork = `Last Day - ${data1[0].timeframes.daily.previous}hrs`;
         currentPlay = `${data1[1].timeframes.daily.current}hrs`;
-        lastPlay = `Last Week - ${data1[1].timeframes.daily.previous}hrs`;
+        lastPlay = `Last Day - ${data1[1].timeframes.daily.previous}hrs`;
         currentStudy = `${data1[2].timeframes.daily.current}hrs`;
-        lastStudy = `Last Week - ${data1[2].timeframes.daily.previous}hrs`;
+        lastStudy = `Last Day - ${data1[2].timeframes.daily.previous}hrs`;
         currentExercise = `${data1[3].timeframes.daily.current}hrs`;
-        lastExercise = `Last Week - ${data1[3].timeframes.daily.previous}hrs`;
+        lastExercise = `Last Day - ${data1[3].timeframes.daily.previous}hrs`;
         currentSocial = `${data1[4].timeframes.daily.current}hrs`;
-        lastSocial = `Last Week - ${data1[4].timeframes.daily.previous}hrs`;
+        lastSocial = `Last Day - ${data1[4].timeframes.daily.previous}hrs`;
         currentSelfCare = `${data1[5].timeframes.daily.current}hrs`;
-        lastSelfCare = `Last Week - ${data1[5].timeframes.daily.previous}hrs`;
+        lastSelfCare = `Last Day - ${data1[5].timeframes.daily.previous}hrs`;
         document.getElementById('current-work').innerHTML = currentWork;
         document.getElementById('last-work').innerHTML = lastWork;
         document.getElementById('current-play').innerHTML = currentPlay;
@@ -103,17 +103,17 @@ function showMonthlyValues() {
     })
     .then(function(data1) {
         currentWork = `${data1[0].timeframes.monthly.current}hrs` //concatenation with template literals;
-        lastWork = `Last Week - ${data1[0].timeframes.monthly.previous}hrs`;
+        lastWork = `Last Month - ${data1[0].timeframes.monthly.previous}hrs`;
         currentPlay = `${data1[1].timeframes.monthly.current}hrs`;
-        lastPlay = `Last Week - ${data1[1].timeframes.monthly.previous}hrs`;
+        lastPlay = `Last Month - ${data1[1].timeframes.monthly.previous}hrs`;
         currentStudy = `${data1[2].timeframes.monthly.current}hrs`;
-        lastStudy = `Last Week - ${data1[2].timeframes.monthly.previous}hrs`;
+        lastStudy = `Last Month - ${data1[2].timeframes.monthly.previous}hrs`;
         currentExercise = `${data1[3].timeframes.monthly.current}hrs`;
-        lastExercise = `Last Week - ${data1[3].timeframes.monthly.previous}hrs`;
+        lastExercise = `Last Month - ${data1[3].timeframes.monthly.previous}hrs`;
         currentSocial = `${data1[4].timeframes.monthly.current}hrs`;
-        lastSocial = `Last Week - ${data1[4].timeframes.monthly.previous}hrs`;
+        lastSocial = `Last Month - ${data1[4].timeframes.monthly.previous}hrs`;
         currentSelfCare = `${data1[5].timeframes.monthly.current}hrs`;
-        lastSelfCare = `Last Week - ${data1[5].timeframes.monthly.previous}hrs`;
+        lastSelfCare = `Last Month - ${data1[5].timeframes.monthly.previous}hrs`;
         document.getElementById('current-work').innerHTML = currentWork;
         document.getElementById('last-work').innerHTML = lastWork;
         document.getElementById('current-play').innerHTML = currentPlay;
