@@ -1,28 +1,109 @@
+var current = '';
+var last = '';
+/*
 let currentWork = '';
 let lastWork = '';
-let currentPlay = '';
-let lastPlay = '';
-let currentStudy = '';
-let lastStudy = '';
-let currentExercise = '';
-let lastExercise = '';
-let currentSocial = '';
-let lastSocial = '';
-let currentSelfCare = '';
+var currentPlay = '';
+var lastPlay = '';
+var currentStudy = '';
+var lastStudy = '';
+var currentExercise = '';
+var lastExercise = '';
+var currentSocial = '';
+var lastSocial = '';
+var currentSelfCare = '';
 let lastSelfCare = '';
+*/
 let weeklyP = document.getElementById('weekly-p');
 let dailyP = document.getElementById('daily-p');
 let monthlyP = document.getElementById('monthly-p');
 let onClickFontColor = 'white';
-let defaultFontColor = 'hsla(236, 100%, 87%, 0.5)'
+let defaultFontColor = 'hsla(236, 100%, 87%, 0.5)';
+var status_1 =  '';
+var status_2 ='';
 
+window.onload = function() {
+    showData();
+}
+
+function showData(elm){
+    if(elm == 'weekly-p'|| (!elm)){
+        status_1 = 'Week';
+        status_2 = 'weekly';
+    }else if(elm == 'daily-p'){
+        status_1 = 'Day';
+        status_2 = 'daily';
+    } else if(elm == 'monthly-p'){
+        status_1 = 'Month';
+        status_2 = 'monthly';
+    }
+    fetch('../data.json')
+    .then(res => {
+    return res.json();
+    }).then(function(data){
+        changeValues(data)
+    });
+}
+
+
+function changeValues(data){
+    for(let i = 0; i < data.length; i++ ){
+        let e = data[i].timeframes;
+        current = data[i].timeframes[status_2].current + "hrs";
+        last = "Last " + status_1 + " - " + data[i].timeframes[status_2].previous + "hrs";
+        if(i == 0) {
+            document.getElementById('current-work').innerHTML = current;
+            document.getElementById('last-work').innerHTML = last;
+        } else if(i == 1){
+            document.getElementById('current-play').innerHTML = current;
+            document.getElementById('last-play').innerHTML = last;
+        } else if(i == 2){
+            document.getElementById('current-study').innerHTML = current;
+            document.getElementById('last-study').innerHTML = last;
+        }  else if(i == 3){
+            document.getElementById('current-exercise').innerHTML = current;
+            document.getElementById('last-exercise').innerHTML = last;
+        } else if(i == 4){
+            document.getElementById('current-social').innerHTML = current;
+            document.getElementById('last-social').innerHTML = last;
+        } else if(i == 5){
+            document.getElementById('current-self-care').innerHTML = current;
+            document.getElementById('last-self-care').innerHTML = last;
+        } else {
+            console.log(`${i}: check json data`);
+        }
+    };
+    if(status_1 == 'Week'){
+        dailyP.style.setProperty("color", defaultFontColor);
+        monthlyP.style.setProperty("color", defaultFontColor);
+        weeklyP.style.setProperty("color", onClickFontColor);
+    } else if(status_1 == 'Day'){
+        monthlyP.style.setProperty("color", defaultFontColor);
+        weeklyP.style.setProperty("color", defaultFontColor);
+        dailyP.style.setProperty("color", onClickFontColor);
+    } else if(status_1 == 'Month'){
+        dailyP.style.setProperty("color", defaultFontColor);
+        weeklyP.style.setProperty("color", defaultFontColor);
+        monthlyP.style.setProperty("color", onClickFontColor);
+    } else {
+        console.log('check param')
+    }
+}
+
+
+
+//Commented out due to function commonality
+/*
 //loading the page -- default values are weekly
 if(currentWork.length == 0 &&  currentPlay.length == 0 && currentStudy.length == 0 && currentExercise.length == 0 && currentSocial.length == 0 && currentSelfCare.length == 0) {
-    showWeeklyValues();
+    
 };
+*/
 
+/*
 //to show weekly values
-function showWeeklyValues() {
+function showWeeklyValues(param) {
+    let status = param;
     fetch('../data.json')
     .then(res => {
     return res.json();
@@ -131,3 +212,4 @@ function showMonthlyValues() {
         monthlyP.style.setProperty("color", onClickFontColor);
     })
 };
+*/

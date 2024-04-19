@@ -27,9 +27,12 @@
         </div>
       </div>
       <ul class="time-lst">
-        <li id="daily-p" onclick="showDailyValues(); return false;">Daily</li>
+      <!-- <li id="daily-p" onclick="changeValues(Day); return false;">Daily</li>
         <li id="weekly-p" onclick="showWeeklyValues(); return false;" >Weekly</li>
-        <li id="monthly-p" onclick="showMonthlyValues(); return false";>Monthly</li>
+        <li id="monthly-p" onclick="showMonthlyValues(); return false";>Monthly</li>--> 
+        <li id="daily-p" onclick="showData(this.id); return false;">Daily</li>
+        <li id="weekly-p" onclick="showData(this.id); return false;" >Weekly</li>
+        <li id="monthly-p" onclick="showData(this.id); return false";>Monthly</li>
       </ul>
     </div>
 
